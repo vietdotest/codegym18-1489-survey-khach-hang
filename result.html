@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dữ liệu biểu mẫu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+<h1>Dữ liệu biểu mẫu</h1><dl id="data"></dl><p><a href="index.html">Quay lại biểu mẫu</a></p><script>const list=document.getElementById("data");for(const [key,value] of new URLSearchParams(location.search)){const term=document.createElement("dt"),detail=document.createElement("dd");term.textContent=key;detail.textContent=value;list.append(term,detail)}</script>
+</body>
+</html>
